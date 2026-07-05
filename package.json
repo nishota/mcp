@@ -1,0 +1,27 @@
+{
+  "name": "poi-mcp",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "MCP server for Poi — upload files and issue free license keys via the public API.",
+  "license": "MIT",
+  "keywords": ["mcp", "model-context-protocol", "poi", "upload", "claude"],
+  "bin": {
+    "poi-mcp": "src/index.mjs"
+  },
+  "main": "src/index.mjs",
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node src/index.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.23.8"
+  }
+}
