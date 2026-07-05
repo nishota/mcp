@@ -4,7 +4,21 @@
   "type": "module",
   "description": "MCP server for Poi — upload files and issue free license keys via the public API.",
   "license": "MIT",
-  "keywords": ["mcp", "model-context-protocol", "poi", "upload", "claude"],
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "poi",
+    "upload",
+    "claude"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nishota/mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nishota/mcp/issues"
+  },
+  "homepage": "https://poi-plane.com/guide.html",
   "bin": {
     "poi-mcp": "src/index.mjs"
   },
