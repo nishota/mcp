@@ -4,6 +4,10 @@
   "type": "module",
   "description": "MCP server for Poi — upload files and issue free license keys via the public API.",
   "license": "MIT",
+  "author": {
+    "name": "nishota",
+    "email": "info@poi-plane.com"
+  },
   "keywords": [
     "mcp",
     "model-context-protocol",
