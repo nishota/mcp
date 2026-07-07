@@ -121,7 +121,7 @@ server.registerTool(
   {
     title: 'Poi: 無料ライセンスキーを発行',
     description:
-      '発行パスワードを使って無料ライセンスキー（LIC-…, 1 年有効）を発行します。' +
+      '発行パスワードを使って無料ライセンスキー（LIC-…, 1 か月有効）を発行します。' +
       '発行されたキーは poi_upload の apiKey（または環境変数 POI_API_KEY）に使えます。',
     inputSchema: {
       password: z.string().optional().describe('発行パスワード（未指定なら環境変数 POI_ISSUE_PASSWORD を使用）'),
