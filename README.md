@@ -45,7 +45,7 @@ Under the hood it calls Poi's public API:
 | `poi_check_license` | `key` (optional; falls back to env var `POI_API_KEY`) | Check whether a license key (`LIC-…`) is valid, returning OK/NG (`valid`) and expiry (`expires_at` / `days_left`). No authentication required. |
 | `poi_list_comments` | `slug` (required) | Fetch a public site's visitor comments, newest first. No authentication required. |
 | `poi_post_comment` | `slug` (required) / `body` (required; max 2000 chars) / `author` (optional = anonymous) | Post a comment to a public site. No authentication required (repeated posts are rate-limited per IP = `429 rate_limited`). |
-| `poi_issue_free_license` | `password` (optional; falls back to env var) | Issue a free license key (`LIC-…`, valid for 1 year). The returned key can be used as `poi_upload`'s `apiKey`. |
+| `poi_issue_free_license` | `password` (optional; falls back to env var) | Issue a free license key (`LIC-…`, valid for 1 month / 30 days). The returned key can be used as `poi_upload`'s `apiKey`. |
 
 ## Setup
 
@@ -188,7 +188,7 @@ npm publish --access public
 | `poi_check_license` | `key`（任意。未指定なら環境変数 `POI_API_KEY`） | ライセンスキー（`LIC-…`）が有効かを判定し、OK/NG（`valid`）と有効期限（`expires_at` / `days_left`）を返す。認証不要。 |
 | `poi_list_comments` | `slug`（必須） | 公開サイトの訪問者コメントを新しい順に取得する。認証不要。 |
 | `poi_post_comment` | `slug`（必須）／ `body`（必須。最大 2000 字）／ `author`（任意＝匿名） | 公開サイトにコメントを投稿する。認証不要（連投は IP 単位でレート制限＝ `429 rate_limited`）。 |
-| `poi_issue_free_license` | `password`（任意。未指定なら環境変数） | 無料ライセンスキー（`LIC-…`, 1 年有効）を発行。返ったキーは `poi_upload` の `apiKey` に使える。 |
+| `poi_issue_free_license` | `password`（任意。未指定なら環境変数） | 無料ライセンスキー（`LIC-…`, 1 か月＝30 日有効）を発行。返ったキーは `poi_upload` の `apiKey` に使える。 |
 
 ## セットアップ
 
