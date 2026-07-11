@@ -22,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/nishota/mcp/issues"
   },
-  "homepage": "https://poi-plane.com/guide.html",
+  "homepage": "https://poi-plane.com/guide/",
   "bin": {
     "poi-mcp": "src/index.mjs"
   },
