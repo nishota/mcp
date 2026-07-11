@@ -11,7 +11,7 @@ file upload/download, comment read/post, and free license key issuance as "tools
 [Poi](https://poi-plane.com/) is a simple hosting service for temporarily publishing static
 web content — no server setup required. Upload a ZIP (a multi-file site), a single HTML file,
 or a Markdown document, and you instantly get a public URL of the form
-`https://poi-plane.com/s/<slug>/`.
+`https://s.poi-plane.com/s/<slug>/`.
 
 - **Instant publishing** — a drag-and-drop or API upload returns a shareable URL right away.
 - **Supported content** — `.zip` (a whole site), `.html`/`.htm` (a single page), and
@@ -175,7 +175,7 @@ npm publish --access public
 
 [Poi](https://poi-plane.com/) は、静的な Web コンテンツを手軽に一時公開できるホスティングサービスです。
 サーバーの用意は不要。ZIP（複数ファイルのサイト）・単体 HTML・Markdown をアップロードすると、
-`https://poi-plane.com/s/<slug>/` 形式の公開 URL がその場で発行されます。
+`https://s.poi-plane.com/s/<slug>/` 形式の公開 URL がその場で発行されます。
 
 - **すぐ公開** — ドラッグ&ドロップ、または API でアップロードすると共有 URL がすぐ返ります。
 - **対応コンテンツ** — `.zip`（サイト一式）・`.html`/`.htm`（単体ページ）・`.md`/`.markdown`
