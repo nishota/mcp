@@ -59,6 +59,24 @@ automatically on first run.
 > Only if you want to develop or modify it locally, clone the repository, run
 > `cd mcp && npm install`, and replace the launch command with `node src/index.mjs`.
 
+### Try it for free
+
+You can try everything without buying a license. The **issue password** below is
+deliberately public for trial use — use it to issue your own free license key:
+
+```
+QyOvsWFAw4upl2a1ULJXc9EMKNZh5ozq
+```
+
+1. Set it as `POI_ISSUE_PASSWORD` (see the client examples below), or pass it per call
+   via the `password` argument.
+2. Ask your LLM client to run `poi_issue_free_license()` — it returns a `LIC-…` key.
+3. Use that key as `POI_API_KEY` (or `poi_upload`'s `apiKey`) to upload.
+
+- Free keys are valid for **30 days**; issuance is rate-limited per IP.
+- Published sites still expire after **7 days** as usual.
+- You can also get a free key in the browser at [poi-plane.com](https://poi-plane.com/?lang=en).
+
 ### Environment variables
 
 | Variable | Default | Purpose |
@@ -124,8 +142,9 @@ npx @modelcontextprotocol/inspector node src/index.mjs
 - "Get a free key for uploading"
   → `poi_issue_free_license()` (uses the issue password from env vars)
 
-> API keys and issue passwords are secrets. In shared environments, pass them via environment
-> variables and be careful not to leave them in logs or conversations.
+> API keys and issue passwords are secrets (the trial issue password above is an exception —
+> it is public by design). In shared environments, pass them via environment variables and be
+> careful not to leave them in logs or conversations.
 
 ## Publishing (for maintainers)
 
@@ -201,6 +220,23 @@ npm に公開してあるので、**クローンや `npm install` は不要**で
 > ローカルで開発・改造する場合のみ、リポジトリを clone して `cd mcp && npm install`、
 > 起動コマンドを `node src/index.mjs` に置き換えてください。
 
+### お試し（無料キーの発行）
+
+ライセンスを購入しなくても一通り試せます。以下の**発行パスワード**はお試し用に公開している
+ものです。これを使って自分用の無料ライセンスキーを発行してください:
+
+```
+QyOvsWFAw4upl2a1ULJXc9EMKNZh5ozq
+```
+
+1. `POI_ISSUE_PASSWORD` に設定する（下記のクライアント登録例を参照）か、`password` 引数で都度渡す
+2. LLM クライアントに `poi_issue_free_license()` を実行させる → `LIC-…` のキーが返る
+3. 返ったキーを `POI_API_KEY`（または `poi_upload` の `apiKey`）に設定してアップロード
+
+- 無料キーの有効期間は **30 日**。発行は IP 単位でレート制限されます
+- 公開サイトは通常どおり **7 日**で失効します
+- ブラウザから [poi-plane.com](https://poi-plane.com/) で取得することもできます
+
 ### 環境変数
 
 | 変数 | 既定 | 用途 |
@@ -266,7 +302,7 @@ npx @modelcontextprotocol/inspector node src/index.mjs
 - 「アップロード用の無料キーを取って」
   → `poi_issue_free_license()`（環境変数の発行パスワードを使用）
 
-> API キー・発行パスワードは秘密情報です。共有環境では環境変数で渡し、ログや会話に残さないよう注意してください。
+> API キー・発行パスワードは秘密情報です（上記のお試し用発行パスワードは公開前提の例外です）。共有環境では環境変数で渡し、ログや会話に残さないよう注意してください。
 
 ## 公開（メンテナ向け）
 
